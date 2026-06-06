@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>position</title>
+    <style>
+        .static {
+            position: static;
+        }
+        .relative {
+            position: relative;
+            left: 50px;
+        }
+        .absolute {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .fixed {
+            position: fixed;
+            bottom: 20px;
+        }
+        .sticky {
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>positionstatic</h1>
+    <div class="static">
+        <p>explanation</p>
+        <p>element appears normally</p>
+    </div>
+    <h2>positionrelative</h2>
+    <div class="relative">
+        <p>explanation</p>
+        <p>element shifts right by 50px</p>
+    </div>
+    <h2>positionabsolute</h2>
+    <div class="absolute">
+        <p>explanation</p>
+        <p>element appears top-right</p>
+    </div>
+    <h3>positionfixed</h3>
+    <div class="fixed">
+        <p>explanation</p>
+        <p>element remains visible while scrolling</p>
+    </div>
+    <h4>positionsticky</h4>
+    <div class="sticky">
+        <p>explanation</p>
+        <p>header sticks to top</p>
+    </div>
+
+</body>
+
+</html>
