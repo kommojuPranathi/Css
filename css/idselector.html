@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Id selectors</title>
+    <script>
+        function buttonchangecolor() {
+            document.getElementById("paragraphselector").style.backgroundColor = "red";
+            document.getElementById("paragraphselector").style.border = "3px solid blue";
+            document.getElementById("headidselector").style.backgroundColor = "blue";
+            document.getElementById("headidselector").style.border = "3px solid green";
+            document.getElementById("buttonchangecolor").style.backgroundColor = "green";
+            document.getElementById("buttonchangecolor").style.border = "3px solid black";
+        }
+        function buttonredclick() {
+            document.body.style.background = 'red';
+        }
+        function buttongreenclick() {
+            document.body.style.background = 'green';
+
+        }
+        function buttonyellowclick() {
+            document.body.style.background = 'yellow';
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <h1 id="headidselector">Id selector</h1>
+        <p id="paragraphselector">this is paragraph with a Id selector</p>
+        <button id="buttonchangecolor" onclick="buttonchangecolor()">onclick change color</button>
+    </div>
+    <div>
+        <button style="background-color: rgb(227, 5, 50);border: 3px solid black color;"
+            onclick="buttonredclick()">red</button>
+        <button style="background-color:rgb(66, 249, 16) ;border:3px sloid black color;"
+            onclick="buttongreenclick()">green</button>
+        <button style="background-color: rgb(223, 223, 17);border:3px solid black color; "
+            onclick="buttonyellowclick()">yellow</button>
+    </div>
+</body>
+
+</html>
